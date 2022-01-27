@@ -23,27 +23,10 @@ var Content = event.results[0][0].transcript;
     
 }
 
+//define function speak() below. Inside the speak function, set pitch to 10 and volume to 0.4
 
-function speak(){
-    var synth = window.speechSynthesis;
 
-    speak_data = "Opening camera";
 
-    var utterThis = new SpeechSynthesisUtterance(speak_data);
-    utterThis.pitch=10;
-    utterThis.volume=0.4;
-    synth.speak(utterThis);
-    Webcam.attach(camera);
-
-}
-
- 
 camera = document.getElementById("camera");
-Webcam.set({
-    width:328,
-    height:400,
-    image_format : 'jpeg',
-    jpeg_quality:90
-});
-
+ //set up camera with width 328, height 400, image_format jpeg and jpeg_quality 90.
 
